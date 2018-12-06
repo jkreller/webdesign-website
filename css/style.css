@@ -1,0 +1,259 @@
+body {
+  margin: 0;
+}
+
+header {
+  position: relative;
+  height: 30em;
+  text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: baijamjuree, sans-serif;
+}
+
+#header-game {
+  padding: 6.12em 0;
+  background: #57A5D6 url(../img/header_game.jpg) no-repeat center;
+  background-size: cover;
+}
+
+#header-game h1 {
+  color: white;
+  font-family: bulkypixels, monospace;
+  font-size: 5em;
+  text-shadow: 0.12em 0.12em 0 black, -0.05em 0.05em black, 0.05em 0.05em black, 0.05em -0.05em black, -0.05em -0.05em black;
+  letter-spacing: -0.19em;
+}
+
+#header-game h2 {
+  font-size: 2em;
+  margin-top: 0.75em;
+}
+
+#header-game img {
+  width: 100%;
+  image-rendering: pixelated;
+}
+
+#earth-block {
+  position: relative;
+  display: inline-block;
+  width: 8em;
+  margin-top: 1em;
+  cursor: pointer;
+}
+
+.header-animated {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  max-width: 0;
+}
+
+.earth-block:active .fly-right {
+  animation-name: fly-right;
+  animation-duration: 4s;
+}
+
+.fixed-top-nav-padding {
+  /* Height of navbar */
+  padding-top: 60px;
+}
+
+.grow {
+  transition: all .2s ease-in-out;
+}
+
+.grow:hover {
+  transform: scale(1.2);
+}
+
+.grow-shadow:hover {
+  filter: drop-shadow(0 .5em .2em rgba(0,0,0,0.4));
+}
+
+.grow-top:hover {
+  transform: scale(1.2);
+  transform-origin: bottom center;
+}
+
+.grow-left:hover {
+  transform-origin: right;
+}
+
+.grow-right:hover {
+  transform-origin: left;
+}
+
+.site-switch {
+  display: inline-block;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.site-switch span {
+  display: inline-block;
+  border-top: 1.5em solid transparent;
+  border-bottom: 1.5em solid transparent;
+  margin-top: 3.5em;
+}
+
+.site-switch-right {
+  right: 0;
+  top: 10em;
+  width: 5em;
+  height: 10em;
+  border-top-left-radius: 5em;
+  border-bottom-left-radius: 5em;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 0 1em;
+}
+
+.site-switch-right span {
+  border-left: 2em solid rgba(255, 255, 255, 0.5);
+  margin-left: 1.5em;
+}
+
+.site-switch-left {
+  left: 0;
+  top: 10em;
+  width: 5em;
+  height: 10em;
+  border-top-right-radius: 5em;
+  border-bottom-right-radius: 5em;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 0 1em;
+}
+
+.site-switch-left span {
+  border-right: 2em solid rgba(255, 255, 255, 0.5);
+  margin-right: 1.5em;
+}
+
+nav {
+  box-shadow: 0 0.2em 0.4em -0.2em rgba(0,0,0,0.1);
+}
+
+.navbar {
+  padding: 0;
+}
+
+.navbar .navbar-collapse {
+  text-align: center;
+}
+
+.navbar-toggler {
+  width: 100%;
+  border-bottom: 1px solid black;
+  border-radius: 0;
+  padding: .3em;
+}
+
+.nav-item {
+  width: 25vw;
+}
+
+main {
+  background: linear-gradient(to bottom, #eaeaea 0%, #dbdbdb 100%);
+}
+
+.row {
+  padding: 2em 0;
+}
+
+#iphone {
+  color: white;
+  position: relative;
+  text-align: center;
+  width: 25em;
+  margin: auto;
+}
+
+#iphone div {
+  position: absolute;
+  padding-left: 5em;
+  padding-right: 5em;
+  padding-top: 6em;
+}
+
+#iphone div p {
+  margin-bottom: 3em;
+}
+
+#robomini {
+  width: 5em;
+  margin-bottom: 2em;
+}
+
+#iphone img:last-child {
+  width: 100%;
+}
+
+#iphone a {
+  display: inline-block;
+}
+
+#ios_badge {
+  width: 12em;
+}
+
+#android_badge {
+  width: 13.5em;
+}
+
+#soon_heading {
+  margin: auto;
+  text-align: center;
+}
+
+#soon_heading h1 {
+  font-size: 5em;
+  margin-bottom: 0.3em;
+}
+
+#soon_heading h2 {
+  font-size: 2em;
+}
+
+#game {
+   height: 30em;
+}
+
+#story {
+  height: 30em;
+}
+
+@media (max-width: 575px) {
+  .nav-item {
+    width: 100%;
+  }
+}
+
+@keyframes fly-right {
+  from {
+    max-width: 0;
+  }
+  to {
+    max-width: 100%;
+  }
+}
+
+@font-face {
+  font-family: bulkypixels;
+  src: url(../fonts/bulkypixels.ttf);
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: baijamjuree;
+  src: url(../fonts/baijamjuree_regular.ttf);
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: baijamjuree;
+  src: url(../fonts/baijamjuree_regular.ttf);
+  font-weight: lighter;
+  font-style: normal;
+}
