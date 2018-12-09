@@ -160,6 +160,41 @@ main {
   padding: 2em 0;
 }
 
+.full-width {
+  width: 100%;
+}
+
+#timeline {
+  position: relative;
+  padding-top: 220px;
+  padding-bottom: 5%;
+}
+
+#tiles {
+  position: absolute;
+  top: 192px;
+  padding: 0 5%;
+}
+
+#tiles p {
+  position: absolute;
+  height: 192px;
+  width: 192px;
+  background: url('../img/mole_walk.png');
+  top: -192px;
+  left: -50px;
+}
+
+#tiles img {
+  width: 10%;
+  display: inline-block;
+}
+
+#dates div {
+  display: inline-block;
+  text-align: center;
+}
+
 #iphone {
   color: white;
   position: relative;
@@ -182,10 +217,6 @@ main {
 #robomini {
   width: 5em;
   margin-bottom: 2em;
-}
-
-#iphone img:last-child {
-  width: 100%;
 }
 
 #iphone a {
@@ -212,14 +243,6 @@ main {
 
 #soon_heading h2 {
   font-size: 2em;
-}
-
-#game {
-   height: 30em;
-}
-
-#story {
-  height: 30em;
 }
 
 @media (max-width: 575px) {
