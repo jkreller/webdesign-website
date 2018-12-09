@@ -1,54 +1,135 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="Die Website von digger - Das Spiel">
-  <meta name="author" content="Byron Zeitschel, Julian Kreller">
-
-  <title>digger</title>
-
-  <link href="css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="css/style.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Die Website von digger - Das Spiel">
+    <meta name="author" content="Byron Zeitschel, Julian Kreller">
+    <title>digger</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
+<style>
+    #infoText {
+        margin-top: 1em;
+
+    }
+
+    #info {
+
+    }
+
+    #programmText ul{
+
+        list-style-type: none;
+    }
+    #programmText li p{
+        display: inline-block;
+
+    }
+    #programmText row{
+        padding-top: 0;
+    }
+
+</style>
 <body>
 <header id="header-game">
-  <h1>digger</h1>
-  <h2>THE GAME</h2>
-  <div id="earth-block" class="grow grow-top grow-shadow">
-    <img src="img/earth.png" alt="Block of pixelated earth">
-    <img class="header-animated fly-right" src="img/mole.png" alt="digger - A pixelated Mole">
-  </div>
-  <a class="grow grow-right site-switch site-switch-left" href="index.html">
-    <span></span>
-  </a>
+    <h1>digger</h1>
+    <h2>RELEASE-PARTY</h2>
+    <div id="earth-block" class="grow grow-top grow-shadow">
+        <img src="img/icon.png" alt="Block of pixelated earth">
+        <img class="header-animated fly-right" src="img/mole.png" alt="digger - A pixelated Mole">
+    </div>
+    <a class="grow grow-right site-switch site-switch-left" href="index.html">
+        <span></span>
+    </a>
 </header>
 <nav class="navbar navbar-expand-sm navbar-light bg-light">
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
 
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mx-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Über<span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Story</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Screenshots</a>
-      </li>
-    </ul>
-  </div>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mx-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Information<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Programm</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Gimmigs</a>
+            </li>
+        </ul>
+    </div>
 </nav>
 <main>
-  <div class="container">
-  </div>
+    <div class="container">
+        <div id="Information" class="row">
+            <div class="col">
+                <h1><p class="text-center">Information</p></h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4">
+                <h3>
+                    <p class="text-center">25.08.2019</p>
+                    <p class="text-center">Köln Messe</p>
+                    <p class="text-center">ab 10 Uhr</p>
+                </h3>
+            </div>
+            <div class="col-sm-8" id="infoText">
+                <p> Kommt Ende August nach der Gamescom vorbei zur großen Digger-ReleaseParty! Euch erwartet eine
+                    abwechslungsreiche Bühnenshow mit vielen spannenden Features, wie bespielsweise unseren
+                    Entwicklertalk oder einen Speedruncontest und natürlich alles rund um unser brandneues Spiel mit
+                    dem kleinen Maulwurf</p>
+            </div>
+        </div>
+
+        <hr>
+        <div id="programm" class="row">
+            <div class="col">
+                <h1><p class="text-center">Programm</p></h1>
+            </div>
+        </div>
+        <div id="game" class="row">
+            <div id="programmText">
+                <div class="col-xs-12">
+                    <ul>
+                        <li><p>10 Uhr</p>
+                            <p>Treff bei Frühstücksbuffet</p></li>
+                        <li><p>12 Uhr</p>
+                            <p>Präsentation des Spiels</p></li>
+                        <li><p>14 Uhr</p>
+                            <p>Mittagspause</p></li>
+                        <li><p>15 Uhr</p>
+                            <p>Speedrunner treten gegeneinander an</p></li>
+                        <li><p>16 Uhr</p>
+                            <p>Überraschung</p></li>
+                        <li><p>17 Uhr</p>
+                            <p>NerdTalk (mit externen Entwicklern, Let's Playern und Entwicklern)</p></li>
+                        <li><p>18 Uhr</p>
+                            <p>Live Konzert: Spiel-Soundtrack mit bekanntem Rapper</p></li>
+                        <li><p>19 Uhr</p>
+                            <p>Abschlussrede + Tasche mit Gimmick</p></li>
+                        <li><p>22 Uhr</p>
+                            <p>After Show Party in „Das Ding“ in Köln (Studentenclub)</p></li>
+                    </ul>
+
+                </div>
+                <hr>
+                <div id="story" class="row">
+                    <div class="col-xs-12">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </main>
 <script src="js/jquery-3.3.1.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/script.js"></script>
 </body>
 </html>
+
