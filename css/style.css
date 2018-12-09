@@ -170,6 +170,10 @@ main {
   padding-bottom: 5%;
 }
 
+#timeline img {
+  margin-bottom: 1.5em;
+}
+
 #tiles {
   position: absolute;
   top: 192px;
@@ -190,9 +194,14 @@ main {
   display: inline-block;
 }
 
+#dates {
+  font-size: 0;
+}
+
 #dates div {
   display: inline-block;
   text-align: center;
+  overflow: hidden;
 }
 
 #iphone {
