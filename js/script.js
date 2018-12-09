@@ -70,7 +70,7 @@ window.onload = function () {
       if (left < timelineBlocksDiv.offsetWidth * differenceRatio - 192*0.8) {
         left += leftDiff;
       } else {
-        moleElement.style.background = 'url(\'img/mole.png\')';
+        moleElement.style.background = 'url(\'img/mole_192.png\')';
         stopAnimate();
       }
     }, interval);

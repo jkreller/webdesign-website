@@ -254,6 +254,22 @@ main {
   font-size: 2em;
 }
 
+#game div {
+   display: inline-block;
+ }
+
+#game > div {
+  margin-bottom: 4em;
+}
+
+#game img {
+  width: 10em;
+}
+
+.width-15 {
+  width: 15em !important;
+}
+
 @media (max-width: 575px) {
   .nav-item {
     width: 100%;
