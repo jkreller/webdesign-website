@@ -30,6 +30,12 @@
     #programmText row{
         padding-top: 0;
     }
+    #programmText ul li p:nth-child(1) {
+
+        font-size: 1.5em;
+        font-weight: bold;
+        padding-right: 2em;
+    }
 
 </style>
 <body>
@@ -94,8 +100,8 @@
             </div>
         </div>
         <div id="game" class="row">
-            <div id="programmText">
-                <div class="col-xs-12">
+            <div id="programmText" class="offset-md-3">
+                <div>
                     <ul>
                         <li><p>10 Uhr</p>
                             <p>Treff bei Frühstücksbuffet</p></li>
@@ -118,14 +124,16 @@
                     </ul>
 
                 </div>
+            </div>
+        </div>
                 <hr>
                 <div id="story" class="row">
                     <div class="col-xs-12">
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
+
+
 </main>
 <script src="js/jquery-3.3.1.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
