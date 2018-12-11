@@ -14,7 +14,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #header-game {
   padding: 6.12em 0;
-  background: #57A5D6 url(../img/header_game_min.jpg) no-repeat center;
+  background: #57a5d6 url(../img/header_game_min.jpg) no-repeat center;
   background-size: cover;
 }
 
@@ -54,6 +54,10 @@ h1, h2, h3, h4, h5, h6 {
   transform-origin: center;
 }
 
+.inner-shadow-part {
+  box-shadow: inset 0 0.1em 1.5em rgba(0, 0, 0, 0.2), inset 0 0.1em 1.5em rgba(0, 0, 0, 0.2);
+}
+
 .header-animated {
   position: absolute;
   left: 50%;
@@ -80,7 +84,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .grow-shadow:hover {
-  filter: drop-shadow(0 .5em .2em rgba(0,0,0,0.4));
+  filter: drop-shadow(0 .5em .2em rgba(0, 0, 0, 0.4));
 }
 
 .grow-top:hover {
@@ -167,7 +171,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 nav {
-  box-shadow: 0 0.2em 0.4em -0.2em rgba(0,0,0,0.1);
+  box-shadow: 0 0.2em 0.4em -0.2em rgba(0, 0, 0, 0.1);
 }
 
 .navbar {
@@ -189,7 +193,7 @@ nav {
   width: 25vw;
 }
 
-main footer{
+main footer {
   background: linear-gradient(to bottom, #eaeaea 0%, #dbdbdb 100%);
 }
 
@@ -242,6 +246,19 @@ main footer{
   overflow: hidden;
 }
 
+#start {
+  background: #76cdf2;
+  color: white;
+}
+
+#start h1 {
+  filter: drop-shadow(0.05em 0.05em 0 rgba(0, 0, 0, 0.4));
+}
+
+#start h2 {
+  filter: drop-shadow(0.08em 0.08em 0 rgba(0, 0, 0, 0.4));
+}
+
 #iphone {
   color: white;
   position: relative;
@@ -292,7 +309,7 @@ main footer{
   font-size: 2em;
 }
 
-#game div div {
+#game div div div {
   display: inline-block;
   margin-bottom: 2em;
 }
@@ -304,6 +321,11 @@ main footer{
 
 .width-15 {
   width: 15em !important;
+}
+
+#story {
+  background-color: #2a2a2a;
+  color: white;
 }
 
 #story img {

@@ -24,7 +24,7 @@ window.onload = function () {
         listElement.classList.remove('active');
       });
       $('html, body').animate({
-        scrollTop: $($.attr(this, 'href')).offset().top - 50
+        scrollTop: $($.attr(this, 'href')).offset().top - 40
       }, 700, function () {
         listElements[index].classList.add('active');
       });
