@@ -14,6 +14,18 @@ window.onload = function () {
     }
   };
 
+  // trailer
+  var earthBlock = document.getElementById('earth-block');
+  var iFrame = $('#earth-block iframe');
+  earthBlock.addEventListener('click', function () {
+    iFrame.show({effect: 'scale'});
+    header.addEventListener('click', function (event) {
+      if (event.target.tagName !== 'IMG') {
+        iFrame.hide({effect: 'scale'});
+      }
+    });
+  });
+
   // timeline
   var timelineBlocksDiv = document.querySelector('#tiles');
 
@@ -51,12 +63,13 @@ window.onload = function () {
 
   function animateScript() {
     var position = 192; //start position for the image slicer
-    var left = -50; //start position for the image slicer
+    var left = 0; //start position for the image slicer
     var interval = 100; //100 ms of interval for the setInterval()
     var posDiff = 192; //diff as a variable for position offset
     var leftDiff = 15;
 
     var moleElement = timelineBlocksDiv.getElementsByTagName('p')[0];
+    moleElement.style.visibility = 'visible';
 
     tID = setInterval(function () {
       moleElement.style.backgroundPosition = '-' + position + 'px';
@@ -67,7 +80,7 @@ window.onload = function () {
       }
 
       moleElement.style.left = left + 'px';
-      if (left < timelineBlocksDiv.offsetWidth * differenceRatio - 192*0.8) {
+      if (left < timelineBlocksDiv.offsetWidth * differenceRatio - 192 * 0.8) {
         left += leftDiff;
       } else {
         moleElement.style.background = 'url(\'img/mole_192.png\')';
@@ -75,4 +88,21 @@ window.onload = function () {
       }
     }, interval);
   }
+
+  var linkElements = document.querySelectorAll('nav a');
+  linkElements.forEach(function (linkElement, index) {
+    linkElement.addEventListener('click', function () {
+      $('.navbar-collapse').collapse('hide');
+      var listElements = document.querySelectorAll('nav li');
+      listElements.forEach(function (listElement) {
+        listElement.classList.remove('active');
+      });
+      $('html, body').animate({
+        scrollTop: $($.attr(this, 'href')).offset().top - 50
+      }, 700, function () {
+        listElements[index].classList.add('active');
+      });
+      return true;
+    });
+  });
 };

@@ -12,6 +12,10 @@ h1, h2, h3, h4, h5, h6 {
   font-family: baijamjuree, sans-serif;
 }
 
+::selection {
+  background: #80a839;
+}
+
 #header-game {
   padding: 6.12em 0;
   background: #57A5D6 url(../img/header_game.jpg) no-repeat center;
@@ -42,6 +46,16 @@ h1, h2, h3, h4, h5, h6 {
   width: 8em;
   margin-top: 1em;
   cursor: pointer;
+}
+
+#earth-block iframe {
+  display: none;
+  position: absolute;
+  bottom: -20px;
+  left: -225px;
+  width: 560px;
+  height: 315px;
+  transform-origin: center;
 }
 
 .header-animated {
@@ -152,7 +166,7 @@ nav {
   width: 25vw;
 }
 
-main {
+main footer{
   background: linear-gradient(to bottom, #eaeaea 0%, #dbdbdb 100%);
 }
 
@@ -186,7 +200,8 @@ main {
   width: 192px;
   background: url('../img/mole_walk.png');
   top: -192px;
-  left: -50px;
+  left: 0;
+  visibility: hidden;
 }
 
 #tiles img {
@@ -254,9 +269,9 @@ main {
   font-size: 2em;
 }
 
-#game div {
-   display: inline-block;
- }
+#game div div {
+  display: inline-block;
+}
 
 #game > div {
   margin-bottom: 4em;
@@ -270,9 +285,65 @@ main {
   width: 15em !important;
 }
 
+#story img {
+  width: 15em;
+}
+
+footer {
+  position: relative;
+  color: #1e1e1e;
+  padding-top: 1.2em;
+}
+
+footer::after {
+  content: "";
+  background: url("../img/earth_tile.png");
+  opacity: 0.2;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+footer p {
+  display: inline-block;
+}
+
+footer a {
+  color: inherit;
+}
+
+footer a:hover {
+  color: inherit;
+}
+
+footer img {
+  width: 2em;
+  margin-left: 1em;
+  margin-top: -0.5em;
+}
+
 @media (max-width: 575px) {
   .nav-item {
     width: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  #timeline {
+    padding-top: 2em;
+  }
+
+  #tiles {
+    display: none;
+  }
+}
+
+@media (max-width: 575px) {
+  #timeline img {
+    display: none;
   }
 }
 
