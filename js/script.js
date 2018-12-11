@@ -14,6 +14,24 @@ window.onload = function () {
     }
   };
 
+  // navbar scroll when click link
+  var linkElements = document.querySelectorAll('nav a');
+  var listElements = document.querySelectorAll('nav li');
+  linkElements.forEach(function (linkElement, index) {
+    linkElement.addEventListener('click', function () {
+      $('.navbar-collapse').collapse('hide');
+      listElements.forEach(function (listElement) {
+        listElement.classList.remove('active');
+      });
+      $('html, body').animate({
+        scrollTop: $($.attr(this, 'href')).offset().top - 50
+      }, 700, function () {
+        listElements[index].classList.add('active');
+      });
+      return true;
+    });
+  });
+
   // trailer
   var earthBlock = document.getElementById('earth-block');
   var iFrame = $('#earth-block iframe');
@@ -88,21 +106,4 @@ window.onload = function () {
       }
     }, interval);
   }
-
-  var linkElements = document.querySelectorAll('nav a');
-  linkElements.forEach(function (linkElement, index) {
-    linkElement.addEventListener('click', function () {
-      $('.navbar-collapse').collapse('hide');
-      var listElements = document.querySelectorAll('nav li');
-      listElements.forEach(function (listElement) {
-        listElement.classList.remove('active');
-      });
-      $('html, body').animate({
-        scrollTop: $($.attr(this, 'href')).offset().top - 50
-      }, 700, function () {
-        listElements[index].classList.add('active');
-      });
-      return true;
-    });
-  });
 };

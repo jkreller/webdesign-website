@@ -308,6 +308,11 @@ main footer{
 
 #story img {
   width: 15em;
+  margin-bottom: 4em;
+}
+
+#story p {
+  margin-bottom: 4em;
 }
 
 footer {
