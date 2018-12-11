@@ -12,13 +12,9 @@ h1, h2, h3, h4, h5, h6 {
   font-family: baijamjuree, sans-serif;
 }
 
-::selection {
-  background: #80a839;
-}
-
 #header-game {
   padding: 6.12em 0;
-  background: #57A5D6 url(../img/header_game.jpg) no-repeat center;
+  background: #57A5D6 url(../img/header_game_min.jpg) no-repeat center;
   background-size: cover;
 }
 
@@ -104,6 +100,11 @@ h1, h2, h3, h4, h5, h6 {
   display: inline-block;
   position: absolute;
   background: rgba(0, 0, 0, 0.5);
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.site-switch:hover {
+  color: white;
 }
 
 .site-switch span {
@@ -113,10 +114,15 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 3.5em;
 }
 
+.site-switch h5 {
+  position: absolute;
+  font-size: 1.1em;
+}
+
 .site-switch-right {
   right: 0;
   top: 10em;
-  width: 5em;
+  width: 8em;
   height: 10em;
   border-top-left-radius: 5em;
   border-bottom-left-radius: 5em;
@@ -125,13 +131,21 @@ h1, h2, h3, h4, h5, h6 {
 
 .site-switch-right span {
   border-left: 2em solid rgba(255, 255, 255, 0.5);
-  margin-left: 1.5em;
+  margin-left: 1em;
+}
+
+.site-switch-right h5 {
+  top: 9em;
+  left: 5.5em;
+  width: 9em;
+  transform: rotate(-90deg);
+  transform-origin: left top 0;
 }
 
 .site-switch-left {
   left: 0;
   top: 10em;
-  width: 5em;
+  width: 8em;
   height: 10em;
   border-top-right-radius: 5em;
   border-bottom-right-radius: 5em;
@@ -140,7 +154,16 @@ h1, h2, h3, h4, h5, h6 {
 
 .site-switch-left span {
   border-right: 2em solid rgba(255, 255, 255, 0.5);
-  margin-right: 1.5em;
+  margin-right: 1em;
+}
+
+.site-switch-left h5 {
+  top: 0;
+  left: 1.75em;
+  width: 9em;
+  margin: 0;
+  transform: rotate(90deg);
+  transform-origin: left top 0;
 }
 
 nav {
