@@ -287,25 +287,25 @@ main footer {
   display: inline-block;
 }
 
-#ios_badge {
+#ios-badge {
   width: 12em;
 }
 
-#android_badge {
+#android-badge {
   width: 13.5em;
 }
 
-#soon_heading {
+#soon-heading {
   margin: auto;
   text-align: center;
 }
 
-#soon_heading h1 {
+#soon-heading h1 {
   font-size: 5em;
   margin-bottom: 0.3em;
 }
 
-#soon_heading h2 {
+#soon-heading h2 {
   font-size: 2em;
 }
 
@@ -391,6 +391,54 @@ footer img {
 
 @media (max-width: 575px) {
   #timeline img {
+    display: none;
+  }
+
+  .site-switch h5 {
+    display: none;
+  }
+
+  .site-switch-right {
+    width: 5em;
+  }
+
+  .site-switch-left {
+    width: 5em;
+  }
+}
+
+@media (max-width: 450px) {
+  .site-switch-right {
+    top: 16em;
+  }
+
+  .site-switch-left {
+    top: 16em;
+  }
+}
+
+@media (max-width: 414px) {
+  #iphone {
+    width: 100%;
+  }
+
+  #iphone div, img {
+    position: relative;
+  }
+
+  #soon-heading h1 {
+    font-size: 3em;
+  }
+
+  #soon-heading h2 {
+    font-size: 1.5em;
+  }
+
+  #iphone div {
+    padding: 1.5em;
+  }
+
+  #iphone > img {
     display: none;
   }
 }
