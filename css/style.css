@@ -271,14 +271,12 @@ main footer{
 
 #game div div {
   display: inline-block;
-}
-
-#game > div {
-  margin-bottom: 4em;
+  margin-bottom: 2em;
 }
 
 #game img {
   width: 10em;
+  margin: 2em 0;
 }
 
 .width-15 {
