@@ -1,2 +1,2 @@
 # webdesign-website
-A pure HTML, CSS, JavaScript website - created for studies project in web and print design.
+A pure HTML, CSS, JavaScript website - created for a studies project for the subject of "Web and print design".
